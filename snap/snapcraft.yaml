@@ -1,6 +1,6 @@
 name: grype
 base: core24
-version: "0.79.4"
+version: "v0.79.4"
 summary: Vulnerability scanner
 description: |
   CLI vulnerability scanner for container images and filesystems
@@ -31,11 +31,7 @@ confinement: classic
 parts:
   grype:
     plugin: go
-    source: https://github.com/anchore/$SNAPCRAFT_PROJECT_NAME/archive/refs/tags/v$SNAPCRAFT_PROJECT_VERSION.tar.gz
-    # This doesn't work due to https://github.com/canonical/craft-parts/issues/788
-    # so we pull the source tarball instead
-    #source: https://github.com/anchore/grype.git
-    #source-tag: $SNAPCRAFT_PROJECT_VERSION
+    source: https://github.com/anchore/$SNAPCRAFT_PROJECT_NAME/archive/refs/tags/$SNAPCRAFT_PROJECT_VERSION.tar.gz
     prime:
       - bin/grype
     build-snaps:
