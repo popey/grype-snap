@@ -1,6 +1,6 @@
 name: grype
 base: core24
-version: "v0.91.0"
+version: "v0.91.1"
 summary: Vulnerability scanner
 description: |
   CLI vulnerability scanner for container images and filesystems
